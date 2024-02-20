@@ -1,20 +1,26 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 import SectionTitle from "@components/atoms/SectionTitle";
+import EducationItem from "@components/atoms/EducationItem";
 
-interface EducationProps {
-  school: string;
-  degree: string;
-  years: string;
-}
-
-export default function Education({ school, degree, years }: EducationProps) {
+export default function Education() {
   return (
     <Box display="flex" flexDirection="column" margin={1}>
       <SectionTitle detail="education" />
-      <Typography variant="body1">{school}</Typography>
-      <Typography variant="body1">{degree}</Typography>
-      <Typography variant="body1">{years}</Typography>
+      <EducationItem
+        years="2015-2019"
+        university="Cracow University of Technology"
+        degree="Bachelor of Engineering"
+        field="Civil Engineering"
+        detail="Bachleor's thesis: Pre-metro station in Cracow"
+      />
+      <EducationItem
+        years="2020-2021"
+        university="Cracow University of Technology"
+        degree="Master of Engineering"
+        field="Civil Engineering - BIM specialization"
+        detail="Master's thesis: Nonlinear FEM trusts solver in Python."
+      />
     </Box>
   );
 }

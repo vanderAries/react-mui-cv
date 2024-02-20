@@ -27,7 +27,7 @@ export default function SideSection() {
           </>
         }
       />
-      <Education school="c" degree="bachleor" years="2019" />
+      <Education />
     </Box>
   );
 }

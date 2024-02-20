@@ -15,9 +15,7 @@ export default function MainTitle({ detail, variant }: MainTitleProps) {
       width="100%"
       margin={1}
     >
-      <Typography variant={variant}>
-        {detail}
-      </Typography>
+      <Typography variant={variant}>{detail}</Typography>
     </Box>
   );
 }

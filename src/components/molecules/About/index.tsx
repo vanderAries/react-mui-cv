@@ -11,9 +11,7 @@ export default function About({ detail }: AboutProps) {
   return (
     <Box display="flex" flexDirection="column" margin={1}>
       <SectionTitle detail="about" />
-      <Typography variant="body1">
-        {detail}
-      </Typography>
+      <Typography variant="body1">{detail}</Typography>
     </Box>
   );
 }

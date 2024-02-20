@@ -14,6 +14,7 @@ interface ContactProps {
 export default function Contact({ phone, email, linkedin }: ContactProps) {
   return (
     <Box
+      color="grey.800"
       display="flex"
       flexDirection="column"
       justifyContent="flex-end"
