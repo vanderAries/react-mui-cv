@@ -11,7 +11,7 @@ export default function SkillsItem({ category, skills }: SkillsItemProps) {
       <Typography variant="h4">{category}</Typography>
       <Box display="flex" flexWrap="wrap">
         {skills.map((skill, index) => (
-          <Box marginRight={1}>
+          <Box key={index} marginRight={1}>
             <Typography key={index} variant="subtitle1">
               {skill}
             </Typography>
