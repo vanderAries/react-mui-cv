@@ -8,11 +8,19 @@ export default function Skills() {
       <SectionTitle detail="skills" />
       <SkillsItem
         category="Development"
-        skills={["JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"]}
+        skills={["AWS", "Node.js", "TypeScript", "Python", "Docker", "Linux", "REST API", "Serverless", "DevOps", "React"]}
       />
       <SkillsItem
-        category="Frameworks"
-        skills={["React", "Express", "Flask"]}
+        category="Testing"
+        skills={["API Testing", "Postman", "Jest", "Reports", "Jenkins", "Infrastructure Automation"]}
+      />
+      <SkillsItem
+        category="Civil Engineering"
+        skills={["Revit", "Robot", "Dynamo", "RFEM", "AutoCAD", "Basic Civil3D", "FEM"]}
+      />
+      <SkillsItem
+        category="Soft Skills"
+        skills={["Problem-Solving", "Creativity", "Communication & Cooperation"]}
       />
     </Box>
   );

@@ -6,16 +6,18 @@ interface SkillsItemProps {
 }
 
 export default function SkillsItem({ category, skills }: SkillsItemProps) {
-    return (
-        <Box display="flex" flexDirection="column" marginY={1}>
-            <Box>
-                <Typography variant="h4">{category}</Typography>
-            </Box>
-            <Box marginY={1}>
-                {skills.map((skill, index) => (
-                    <Typography key={index} variant="subtitle1">{skill}</Typography>
-                ))}
-            </Box>
-        </Box>
-    );
+  return (
+    <Box display="flex" flexDirection="column" marginTop={1}>
+      <Typography variant="h4">{category}</Typography>
+      <Box display="flex" flexWrap="wrap">
+        {skills.map((skill, index) => (
+          <Box marginRight={1}>
+            <Typography key={index} variant="subtitle1">
+              {skill}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  );
 }

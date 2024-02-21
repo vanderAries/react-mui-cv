@@ -28,6 +28,7 @@ const theme = createTheme({
     subtitle1: {
       fontSize: 8,
       fontWeight: 600,
+      lineHeight: 1.5,
       textDecoration: "underline",
       textUnderlineOffset: 1,
       color: grey[600],

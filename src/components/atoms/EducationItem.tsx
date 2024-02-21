@@ -16,12 +16,10 @@ export default function EducationItem({
   detail,
 }: EducationItemProps) {
   return (
-    <Box display="flex" flexDirection="column" marginY={1}>
-      <Box>
-        <Typography variant="subtitle1">{years}</Typography>
-        <Typography variant="h4">{university}</Typography>
-      </Box>
-      <Box marginY={1}>
+    <Box display="flex" flexDirection="column" marginTop={1}>
+      <Typography variant="subtitle1">{years}</Typography>
+      <Typography variant="h4">{university}</Typography>
+      <Box marginBottom={1}>
         <Typography variant="body1">{degree}</Typography>
         <Typography variant="body1">{field}</Typography>
       </Box>

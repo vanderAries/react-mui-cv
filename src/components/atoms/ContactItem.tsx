@@ -6,7 +6,6 @@ interface ContactItemProps {
   icon: React.ElementType;
 }
 
-// Function declaration for the component
 export default function ContactItem({
   detail,
   icon: IconComponent,
