@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import About from "@components/molecules/About";
 import Education from "@components/molecules/Education";
+import Skills from "@components/molecules/Skills";
 
 export default function SideSection() {
   return (
@@ -28,6 +29,7 @@ export default function SideSection() {
         }
       />
       <Education />
+      <Skills/>
     </Box>
   );
 }
